@@ -70,6 +70,8 @@ public class Usenko_HW04_Calculator {
         } catch (IllegalArgumentException e) {
             System.out.println("Недійсна операція.");
             return null;
+
         }
     }
 }
+

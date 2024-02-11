@@ -1,8 +1,26 @@
-package org.example;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        System.out.println("Hello DDDDio!");
+        List<String> inputData = List.of("5", "+", "5");
+        Integer result = 10;
+        String resultString = prepareResults(inputData, result);
+        System.out.println(resultString);
+    }
+
+    public static String prepareResults(List<String> inputData, Integer result) {
+        StringBuilder formattedResult = new StringBuilder();
+
+        for (int i = 0; i < inputData.size(); i++) {
+            if (i > 0 && inputData.get(i).startsWith("-")) {
+                formattedResult.append(inputData.get(i));
+            } else {
+                formattedResult.append(inputData.get(i));
+            }
+        }
+
+        formattedResult.append("=").append(result);
+
+        return formattedResult.toString();
     }
 }
