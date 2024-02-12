@@ -18,7 +18,7 @@ public class Main {
                 formattedResult.append(inputData.get(i));
             }
         }
-
+// test
         formattedResult.append("=").append(result);
 
         return formattedResult.toString();
